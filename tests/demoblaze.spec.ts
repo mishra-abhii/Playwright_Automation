@@ -3,7 +3,7 @@ import {urls} from '../utils/urls';
 import {locators} from '../locators/elements_locator';
 
 test.describe('Demoblaze test cases' , () => {
-    test.beforeAll(async ({page}) => {
+    test.beforeEach(async ({page}) => {
         await page.goto(urls.landingPage);
     });
 
